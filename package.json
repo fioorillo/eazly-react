@@ -1,0 +1,22 @@
+{
+  "name": "eazly-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fioorillo/eazly-react.git"
+  },
+  "author": "Antonio Fiorillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fioorillo/eazly-react/issues"
+  },
+  "homepage": "https://github.com/fioorillo/eazly-react#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2"
+  }
+}

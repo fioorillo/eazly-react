@@ -1,1 +1,1 @@
-# ezly-react
+# eazly-react
