@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, DependencyList, EffectCallback } from "react";
 
 
-const useLazyLayoutEffect = (effect: EffectCallback, deps: DependencyList) => {
+export const useLazyLayoutEffect = (effect: EffectCallback, deps: DependencyList) => {
 
     const isMount = useRef(true);
 
@@ -14,7 +14,4 @@ const useLazyLayoutEffect = (effect: EffectCallback, deps: DependencyList) => {
         return effect();
 
     }, deps)
-
 }
-
-export default useLazyLayoutEffect;

@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { SingleConditionMapperProps } from "./types";
 
-const SingleConditionMapper: React.FC<SingleConditionMapperProps> = ({ condition, render, elseRender }) => {
+export const SingleConditionMapper: React.FC<SingleConditionMapperProps> = ({ condition, render, elseRender }) => {
 
     const isConditionVerified = useCallback(() => {
         if (condition instanceof Function) {
@@ -17,5 +17,3 @@ const SingleConditionMapper: React.FC<SingleConditionMapperProps> = ({ condition
         </>
     );
 }
-
-export default SingleConditionMapper;

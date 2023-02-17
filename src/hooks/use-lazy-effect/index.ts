@@ -1,7 +1,7 @@
 import { useEffect, useRef, DependencyList, EffectCallback } from "react";
 
 
-const useLazyEffect = (effect: EffectCallback, deps: DependencyList) => {
+export const useLazyEffect = (effect: EffectCallback, deps: DependencyList) => {
 
     const isMount = useRef(true);
 
@@ -16,5 +16,3 @@ const useLazyEffect = (effect: EffectCallback, deps: DependencyList) => {
     }, deps)
 
 }
-
-export default useLazyEffect;

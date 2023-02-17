@@ -1,7 +1,7 @@
 import React from 'react';
 import { ListMapperProps } from './types';
 
-const ListMapper = <T extends unknown>({ list, elemRender, emptyListRender }: ListMapperProps<T>) => {
+export const ListMapper = <T extends unknown>({ list, elemRender, emptyListRender }: ListMapperProps<T>) => {
     if (!list || list.length === 0) {
         return emptyListRender?.()!! || null;
     }
@@ -12,6 +12,3 @@ const ListMapper = <T extends unknown>({ list, elemRender, emptyListRender }: Li
         </React.Fragment>
     );
 };
-
-
-export default ListMapper;
